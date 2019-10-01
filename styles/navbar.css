@@ -22,6 +22,7 @@ nav ul li a{
 nav ul li a:hover{
     background-color: silver;
     color: black;
+    transition: background-color 1s ease;
 }
 
 nav ul li a:active {
@@ -33,6 +34,13 @@ nav ul li a:active {
     float: left;
     position: relative;
     margin: 10px 0 0 30px;
+    animation: logo 600ms linear infinite alternate;
+    animation-iteration-count: 1;
+}
+
+@keyframes logo {
+    0%   {left:0; top:-50px;}
+    100%  {left:0; top:0px;}
 }
 
 .nav-bar {

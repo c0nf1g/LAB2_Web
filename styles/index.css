@@ -28,6 +28,21 @@ body {
     margin: 0;
     max-width: none;
     height: 100vh;
+    animation: fadeIn;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .content h1 {
@@ -37,6 +52,12 @@ body {
     line-height: 1;
     width: 100%;
     margin: 1.49em 0;
+    animation: content-heading-animation 1s linear infinite alternate;
+}
+
+@keyframes content-heading-animation {
+    0% {left: -20px; top: -10px}
+    100% { left: 20px; top: 10px }
 }
 
 .about {
@@ -88,6 +109,12 @@ body {
     width: 100%;
     margin: 1.5em 0;
     color: white;
+    animation: heading-animation 2s linear infinite alternate;
+}
+
+@keyframes heading-animation {
+    0% {left: -20px}
+    100% { left: 20px }
 }
 
 .best-album-section p {
@@ -102,6 +129,12 @@ body {
     float: left;
     margin: 30px;
     position: relative;
+    animation: best-album-animation 2s linear infinite alternate;
+}
+
+@keyframes best-album-animation {
+    0% { top: -20px }
+    100% { top: 20px }
 }
 
 .footer {
@@ -128,5 +161,15 @@ body {
     transform: translate(-50%, -50%);
     font-family: Arial, serif;
     font-size: 50px;
+    animation: floatBubble 3s normal forwards ease-in-out;
 }
 
+@-webkit-keyframes floatBubble {
+    0% { top:100px; }
+    100% { top:500px; }
+}
+
+@keyframes floatBubble {
+    0% { top:100px; }
+    100% { top:500px; }
+}
