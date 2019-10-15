@@ -5,136 +5,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Metallica</title>
     <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 </head>
 <body>
 <header>
-        <nav class="nav-bar">
-            <a href="index.html"><img src="../resources/logo.svg" class="logo-img" width="100" height="50"></a>
-            <ul>
-                <li><a href="index.html">MAIN</a></li>
-                <li><a href="news.html">NEWS</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">FOR FANS</a>
-                    <div class="dropdown-content">
-                        <a class="nav_link" href="#">Link 1</a>
-                        <a class="nav_link" href="#">Link 2</a>
-                        <a class="nav_link" href="#">Link 3</a>
-                    </div>
-                </li>
-                <li><a href="#">FANS APPEAL</a></li>
-                <li><a href="#">CONCERT VENUE</a></li>
-                <li><a href="#">ADMIN</a></li>
-            </ul>
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">METALLICA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">MAIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">NEWS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            FOR FANS
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">FAN CLUB</a>
+                            <a class="dropdown-item" href="schedule.html">TOUR SCHEDULE</a>
+                            <a class="dropdown-item" href="#">LYRICS</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appeal.html">FANS APPEAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="concert_venue.html">CONCERT VENUE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin.html">ADMIN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="masthead">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="font-weight-light">METALLICA</h1>
+                    <p class="lead">Boredom comes from a boring mind</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 <main>
-    <div class="container">
-        <img src="../resources/cover.png" class="img-box">
-        <div class="centered"><h1>Metallica</h1></div>
-    </div>
-    <section class="about-section">
-        <div class="content">
-            <h1>About Group</h1>
-            <div class="about">
-                <p>Metallica is an American heavy metal band. The band was formed in 1981 in Los Angeles by vocalist/guitarist
-                    James Hetfield and drummer Lars Ulrich, and has been based in San Francisco for most of its career.[1][2]
-                    The group's fast tempos, instrumentals and aggressive musicianship made them one of the founding "big four"
-                    bands of thrash metal, alongside Megadeth, Anthrax and Slayer. Metallica's current lineup comprises founding
-                    members and primary songwriters Hetfield and Ulrich, longtime lead guitarist Kirk Hammett and bassist Robert
-                    Trujillo. Guitarist Dave Mustaine (who went on to form Megadeth after being fired from the band) and
-                    bassists Ron McGovney, Cliff Burton (who died in a bus accident in Sweden in 1986) and Jason Newsted are
-                    former members of the band.
-                    Metallica earned a growing fan base in the underground music community and won critical acclaim with its
-                    first five albums.[3] The band's third album, Master of Puppets (1986), was described as one of the heaviest
-                    and most influential thrash metal albums. Its eponymous fifth album, Metallica (1991), the band's first to
-                    root predominantly in heavy metal, appealed to a more mainstream audience, achieving substantial commercial
-                    success and selling over 16 million copies in the United States to date, making it the best-selling album
-                    of the SoundScan era. After experimenting with different genres and directions in subsequent releases, the
-                    band returned to its thrash metal roots with the release of its ninth album, Death Magnetic (2008), which
-                    drew similar praise to that of the band's earlier albums.
-                    In 2000, Metallica led the case against the peer-to-peer file sharing service Napster, in which the band
-                    and several other artists filed lawsuits against the service for sharing their copyright-protected material
-                    without consent; after reaching a settlement, Napster became a pay-to-use service in 2003. Metallica was
-                    the subject of the acclaimed 2004 documentary film Metallica: Some Kind of Monster, which documented the
-                    sometimes troubled production of the band's eighth album, St. Anger (2003), and the internal struggles
-                    within the band at the time. In 2009, Metallica was inducted into the Rock and Roll Hall of Fame. The band
-                    wrote the screenplay for and starred in the 2013 IMAX concert film Metallica: Through the Never, in which
-                    the band performed live against a fictional thriller storyline.
-                    Metallica has released ten studio albums, four live albums, a cover album, five extended plays, 37 singles
-                    and 39 music videos. The band has won nine Grammy Awards from 23 nominations, and its last six studio albums
-                    (beginning with Metallica) have consecutively debuted at number one on the Billboard 200. Metallica ranks
-                    as one of the most commercially successful bands of all time, having sold over 125 million albums worldwide
-                    as of 2018.[4] Metallica has been listed as one of the greatest artists of all time by magazines such as
-                    Rolling Stone, which ranked them at no. 61 on its 100 Greatest Artists of All Time list.[5] As of 2017,
-                    Metallica is the third best-selling music artist since Nielsen SoundScan began tracking sales in 1991,[6]
-                    selling a total of 58 million albums in the United States.[7] </p>
-            </div>
+    <section class="py-5">
+        <div class="container">
+            <h2 class="font-weight-light" style="color: black; padding-bottom: 20px">About Group</h2>
+            <p style="color: black; text-align: justify;">Metallica is an American heavy metal band. The band was formed in 1981 in Los Angeles by vocalist/guitarist
+                James Hetfield and drummer Lars Ulrich, and has been based in San Francisco for most of its career.[1][2]
+                The group's fast tempos, instrumentals and aggressive musicianship made them one of the founding "big four"
+                bands of thrash metal, alongside Megadeth, Anthrax and Slayer. Metallica's current lineup comprises founding
+                members and primary songwriters Hetfield and Ulrich, longtime lead guitarist Kirk Hammett and bassist Robert
+                Trujillo. Guitarist Dave Mustaine (who went on to form Megadeth after being fired from the band) and
+                bassists Ron McGovney, Cliff Burton (who died in a bus accident in Sweden in 1986) and Jason Newsted are
+                former members of the band.
+                Metallica earned a growing fan base in the underground music community and won critical acclaim with its
+                first five albums.[3] The band's third album, Master of Puppets (1986), was described as one of the heaviest
+                and most influential thrash metal albums. Its eponymous fifth album, Metallica (1991), the band's first to
+                root predominantly in heavy metal, appealed to a more mainstream audience, achieving substantial commercial
+                success and selling over 16 million copies in the United States to date, making it the best-selling album
+                of the SoundScan era. After experimenting with different genres and directions in subsequent releases, the
+                band returned to its thrash metal roots with the release of its ninth album, Death Magnetic (2008), which
+                drew similar praise to that of the band's earlier albums.
+                In 2000, Metallica led the case against the peer-to-peer file sharing service Napster, in which the band
+                and several other artists filed lawsuits against the service for sharing their copyright-protected material
+                without consent; after reaching a settlement, Napster became a pay-to-use service in 2003. Metallica was
+                the subject of the acclaimed 2004 documentary film Metallica: Some Kind of Monster, which documented the
+                sometimes troubled production of the band's eighth album, St. Anger (2003), and the internal struggles
+                within the band at the time. In 2009, Metallica was inducted into the Rock and Roll Hall of Fame. The band
+                wrote the screenplay for and starred in the 2013 IMAX concert film Metallica: Through the Never, in which
+                the band performed live against a fictional thriller storyline.
+                Metallica has released ten studio albums, four live albums, a cover album, five extended plays, 37 singles
+                and 39 music videos. The band has won nine Grammy Awards from 23 nominations, and its last six studio albums
+                (beginning with Metallica) have consecutively debuted at number one on the Billboard 200. Metallica ranks
+                as one of the most commercially successful bands of all time, having sold over 125 million albums worldwide
+                as of 2018.[4] Metallica has been listed as one of the greatest artists of all time by magazines such as
+                Rolling Stone, which ranked them at no. 61 on its 100 Greatest Artists of All Time list.[5] As of 2017,
+                Metallica is the third best-selling music artist since Nielsen SoundScan began tracking sales in 1991,[6]
+                selling a total of 58 million albums in the United States.[7]</p>
+        </div>
+        <div class="container">
             <div class="row">
-                <div class="column">
-                    <h2>James Hetfield</h2>
-                    <img src="../resources/hetfield.jpg" width="300" height="300">
+                <div class="col">
+                    <p class="h2" style="color: black; padding: 10px">James Hetfield</p>
+                    <img src="../resources/hetfield.jpg" width="250" height="250" class="rounded">
                 </div>
-                <div class="column">
-                    <h2>Lars Ulrich</h2>
-                    <img src="../resources/ulrich.jpg" width="300" height="300">
+                <div class="col">
+                    <p class="h2" style="color: black; padding: 10px">James Hetfield</p>
+                    <img src="../resources/hetfield.jpg" width="250" height="250" class="rounded">
                 </div>
-                <div class="column">
-                    <h2>Kirk Hammett</h2>
-                    <img src="../resources/hammett.jpg" width="300" height="300">
+                <div class="col">
+                    <p class="h2" style="color: black; padding: 10px">James Hetfield</p>
+                    <img src="../resources/hetfield.jpg" width="250" height="250" class="rounded">
                 </div>
-                <div class="column">
-                    <h2>Roberto Trujillo</h2>
-                    <img src="../resources/trujillo.jpg" width="300" height="300">
+                <div class="col">
+                    <p class="h2" style="color: black; padding: 10px">James Hetfield</p>
+                    <img src="../resources/hetfield.jpg" width="250" height="250" class="rounded">
                 </div>
             </div>
         </div>
     </section>
-    <section class="best-album-section">
-        <h1>Best Album</h1>
-        <div class="anim-photo">
-            <img src="../resources/master_of_puppets.jpg" width="600" height="600" class="best-album-photo">
+    <div class="container-fluid" style="background-color: black">
+        <h2 class="font-weight-light" style="color: white; padding-bottom: 20px; text-align: center">Best Album</h2>
+        <div class="row">
+            <img src="../resources/master_of_puppets.jpg" class="mx-auto d-block img-fluid">
+            <div class="mx-3 mb-3" style="text-align: justify; color: white">
+                Over 30 years on, it’s still hard to overestimate the impact Metallica’s Master Of Puppets had on the world.
+                Their most profound and emphatic musical statement, it would come to define them, and with the death of bass
+                player Cliff Burton on that album’s tour, it book-ended an era for the quartet, while their new-found status
+                as one of the most important metal band on the planet to risked toppling to that of just another infamous
+                rock act forever marred by a gruesome fatality.
+                For those of us still marvelling at their unparalleled and sophisticated leap from the Kill ’Em All debut to
+                their Ride The Lightning album, Master was a whole other level of erudition. Strange to think now that there
+                was outrage in some quarters when they introduced acoustic guitars to the audience at Hammersmith Odeon on
+                the Lightning tour. Though if their audience and critics were still clinging to the past, Metallica were
+                marching purposefully forward to the beat of their own drum (toms and double bass drums, mostly), setting
+                the spark to the flame of a genuine musical revolution.
+                Over 30 years on, it’s still hard to overestimate the impact Metallica’s Master Of Puppets had on the world.
+                Their most profound and emphatic musical statement, it would come to define them, and with the death of bass
+                player Cliff Burton on that album’s tour, it book-ended an era for the quartet, while their new-found status
+                as one of the most important metal band on the planet to risked toppling to that of just another infamous
+                rock act forever marred by a gruesome fatality.
+                For those of us still marvelling at their unparalleled and sophisticated leap from the Kill ’Em All debut to
+                their Ride The Lightning album, Master was a whole other level of erudition. Strange to think now that there
+                was outrage in some quarters when they introduced acoustic guitars to the audience at Hammersmith Odeon on
+                the Lightning tour. Though if their audience and critics were still clinging to the past, Metallica were
+                marching purposefully forward to the beat of their own drum (toms and double bass drums, mostly), setting
+                the spark to the flame of a genuine musical revolution.
+            </div>
         </div>
-        <p>
-            Over 30 years on, it’s still hard to overestimate the impact Metallica’s Master Of Puppets had on the world.
-            Their most profound and emphatic musical statement, it would come to define them, and with the death of bass
-            player Cliff Burton on that album’s tour, it book-ended an era for the quartet, while their new-found status
-            as one of the most important metal band on the planet to risked toppling to that of just another infamous
-            rock act forever marred by a gruesome fatality.
-            For those of us still marvelling at their unparalleled and sophisticated leap from the Kill ’Em All debut to
-            their Ride The Lightning album, Master was a whole other level of erudition. Strange to think now that there
-            was outrage in some quarters when they introduced acoustic guitars to the audience at Hammersmith Odeon on
-            the Lightning tour. Though if their audience and critics were still clinging to the past, Metallica were
-            marching purposefully forward to the beat of their own drum (toms and double bass drums, mostly), setting
-            the spark to the flame of a genuine musical revolution.
-
-            That James Hetfield was 22 when Master Of Puppets was recorded, and his buddy Lars just 21, is genuinely
-            mind-blowing. What's even more astonishing is that one of the most revered, inspirational and influential
-            metal albums of all time never even broke into the UK Top 40 in 1986, peaking at number 41 in the national
-            album chart in a year when Iron Maiden and Bon Jovi scored Top 10 releases. But chart statistics alone
-            cannot measure the significance of an album which set its creators up as the kings of a new age of metal
-            and changed the face of the genre forever.
-
-            In terms of dynamics and pacing, Metallica’s third album may have aped the structure of its predecessor,
-            but that’s the only note of caution on an eight track release which from the opening acoustic flurries of
-            the electrifying Battery, through the beautiful harmonies of Orion, to the final breathless flailings of
-            Damage, Inc never once drops the baton.
-
-            Though history will remember 1986 as the year thrash broke through into the mainstream metal consciousness
-            – Master Of Puppets pushing a new breed of metal fans to seek out more extreme sounds, paving the way for
-            the success of Slayer’s Reign In Blood and Megadeth’s Peace Sells… and bolstering interest in exhilarating
-            albums from the likes of Kreator, Dark Angel and Destruction – Master Of Puppets was emphatic proof that
-            Metallica had out-grown the scene and were now embarking on a journey with their own hand-drawn map.
-            Having blown out the genre’s boundaries, the album challenged those following in Metallica’s wake to at
-            least attempt to do the same.
-
-            Interviewed in 2006, Lars Ulrich told this writer that Master Of Puppets is a “motherfucker” of a record,
-            and who could possibly argue with that? Metallica’s masterpiece, its power remains undiminished by the
-            passing of time.
-        </p>
-    </section>
+    </div>
 </main>
-<footer class="footer">
-    <p>Footer</p>
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+        <small>Copyright &copy; Your Website</small>
+    </div>
 </footer>
 </body>
 </html>
