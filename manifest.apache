@@ -1,0 +1,17 @@
+CACHE MANIFEST
+#v1.0
+
+CACHE:
+/index.html
+/appeal.html
+/concert_venue.html
+/news.html
+/schedule.html
+/resources/
+/styles/
+
+NETWORK:
+*
+
+FALLBACK:
+/ /offline.html

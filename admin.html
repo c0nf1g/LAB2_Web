@@ -1,21 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="manifest.apache">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Metallica</title>
-    <link rel="stylesheet" href="../styles/concert_venue.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
@@ -58,28 +52,28 @@
     </nav>
 </header>
 <main>
-    <div class="container-fluid">
-        <h1 class="text-center mt-3 mb-3">Place of next concert</h1>
-        <div class="row ml-5 mr-5">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11880.492291371422!2d12.4922309!3d41.8902102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1524815927977" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-    </div>
-    <div class="container-fluid mt-3 px-3">
-        <div class="shadow p-3 mb-5 bg-white rounded">
-            <div class="row">
-                <div class="col-12 mx-auto">
-                    <h1 class="text-center mt-3 mb-3">Contacts</h1>
-                    <h5 class="text-center">проспект Свободи, 28, Львів, Львівська область, 79000</h5>
+    <div class="container">
+        <form>
+            <div class="row mt-3 p-3">
+                <div class="col-12 col-md-4 mb-2">
+                    <input type="button" class="form-control btn btn-info" value="Add image">
+                </div>
+                <div class="col-12 col-md-8 text-center">
+                    <img src="resources/hetfield.jpg" class="img-fluid">
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col text-center pb-3">
-                <button type="button" class="btn btn-danger text-center">Buy a ticket now</button>
+        </form>
+        <form>
+            <div class="row mt-3 p-3">
+                <div class="col-12 col-md-4 mb-2 ">
+                    <input type="submit" class="form-control btn btn-success" value="Submit">
+                </div>
+                <div class="col-12 col-md-8 text-center">
+                    <input type="text" class="form-control mb-2" placeholder="News title">
+                    <textarea class="form-control" placeholder="News body" rows="7"></textarea>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 </main>
 <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
